@@ -401,7 +401,7 @@ function Library:UpdateDPI(Instance, Properties)
 end
 
 function Library:SetDPIScale(DPIScale: number)
-    Library.DPIScale = DPIScale / 100
+    Library.DPIScale = DPIScale / 50
     Library.MinSize *= Library.DPIScale
 
     for Instance, Properties in pairs(Library.DPIRegistry) do
